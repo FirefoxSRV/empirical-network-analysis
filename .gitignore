@@ -1,9 +1,26 @@
+# Binary packet captures live in data/captures/. Keep the directory but ignore contents.
+data/captures/*
+!data/captures/.gitkeep
+
+# Analysis artifacts (JSON, CSV, etc.) should be generated in artifacts/.
+artifacts/*
+!artifacts/.gitkeep
+
+# Raw capture formats (in case they live elsewhere)
 *.pcap
 *.pcapng
+
+# Generic large/binary exports
 *.csv
 *.zip
 *.mp4
 *.mov
 large_files/
+
+# Python + notebook noise
 __pycache__/
 *.pyc
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
