@@ -1,0 +1,7 @@
+*.pcap
+*.pcapng
+*.csv
+*.zip
+*.mp4
+*.mov
+large_files/
